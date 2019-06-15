@@ -4,6 +4,14 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
+        <script>
+            // DataLayers definidos/presentes en el momento de cargar la página (incluidos antes de la carga del contenedor)
+            dataLayer = [{
+                'id': '12345',
+                'name': 'ID GA',
+                'gaId': '029481029481290420948120948129048214' //esta key deberá ser el nombre de la variable de capa de datos en GTM
+            }];
+        </script>
         <!-- Google Tag Manager -->
         <script>
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
